@@ -39,6 +39,7 @@ def register():
 def login():
     form = login_form()
     if current_user.is_authenticated:
+        flash("Welcome", 'success')
         return redirect(url_for('auth.dashboard'))
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()

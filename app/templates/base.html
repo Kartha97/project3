@@ -20,7 +20,7 @@
 
 
         <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
-        <title>My Music Catalogue - {% block title %}{% endblock %}</title>
+        <title>Welcome to Kartha's  Project3</title>
 
     {% endblock %}
 </head>
@@ -97,7 +97,15 @@
     </div>
     <!-- Your page content -->
     <div class="row">
-        {{ render_messages() }}
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <ul class=flashes>
+                    {% for category, message in messages %}
+                        <li class="{{ category }}">{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
     </div>
     <div class="row mt-5">
 
