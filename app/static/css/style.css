@@ -147,8 +147,7 @@ a {
   width: 100%;
 }
 
-
-.carousel-item> img {
+.carousel-item > img {
   width:500px !important;
   height:400px !important;
   margin: auto;
