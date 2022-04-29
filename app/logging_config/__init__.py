@@ -8,7 +8,6 @@ import flask
 from flask import g,request, current_app
 from rfc3339 import rfc3339
 
-from app.logging_config.log_formatters import RequestFormatter
 from app import config
 
 log_con = flask.Blueprint('log_con', __name__)
