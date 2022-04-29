@@ -1,3 +1,162 @@
 body {
-font-size: 200%;
+    font-size: 100%;
+    background-image: url(../images/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100%;
+    margin: 3px;
+    background-attachment: fixed;
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+}
+
+
+/*------------------------------ Navbar Custom -------------------------------*/
+.navbar-default {
+    background-image: linear-gradient(#585858, #909090) !important;
+
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: black !important;
+    font-size: large !important;
+}
+
+.navbar {
+    border: 0;
+    box-shadow: none;
+}
+
+
+.nav-item {
+    color: black !important;
+    font-size: large;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #2bc20e !important;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+.neonblue {
+   color: #0000FF  !important;
+}
+
+.neongreen {
+    color: #2bc20e !important;
+}
+
+.navbar-toggler {
+    border: 2px solid #303030 !important;
+}
+
+.dropdown-menu {
+    background-color: #9c9c9c;
+}
+
+/*------------------- Color of links------------------------------------------*/
+a:hover {
+    color: #2bc20e !important;
+}
+a {
+    color: darkslategrey;
+}
+/*-------- active pill color --------*/
+.active {
+    color: darkgray !important;
+    background-color: dimgray;
+    border-radius: 6px;
+}
+/*--------- border-------------------*/
+.outset {
+    border-style: outset;
+    border-color: dimgrey;
+    border-width: 5px;
+}
+
+.px10 {
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+}
+
+/*------------------------- Font sizes and colors-----------------*/
+.h7 {
+    font-size: 12px;
+}
+
+.greyfont {
+    color: #909090;
+}
+.whitefont {
+    color: #f2f3f4;
+}
+
+.darkfont {
+    color: darkslategray;
+}
+
+
+/*---------------------carousel custom-----------------*/
+.carousel-caption {
+    left: auto;
+
+}
+
+.p1 {
+    text-align: center;
+    color: #989898;
+
+}
+.progress-bar {
+    background-color: rgba(0, 200, 0, 0.4);
+}
+
+.progress-bar-stripped {
+    background-image: linear-gradient(45deg, rgba(	0,200,0, 0.15) 25%, transparent 25%, transparent 50%, rgba(14,210,14, 0.15) 50%, rgba(14, 210, 14, 0.15) 75%, transparent 75%, transparent);
+    background-size: 1rem 1rem;
+}
+
+.input{
+    background-color:#666;
+    color: #FFF;
+}
+
+.pagination {
+    justify-content: center;
+
+
+}
+
+.btn-info {
+    background: #2bc20e !important;
+}
+
+.btn {
+    background: rgba(43, 194, 14, 0.7) !important;
+
+}
+
+.tales {
+  width: 100%;
+}
+
+
+.carousel-item> img {
+  width:500px !important;
+  height:400px !important;
+  margin: auto;
+ display: block;
+
+
+}
+.carousel-item {
+    background-color: transparent;
+
 }
