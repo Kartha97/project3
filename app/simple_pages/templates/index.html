@@ -58,9 +58,7 @@
         </div>
             <h1>Index Page</h1>
             <p>
-                Welcome to the project 3 of IS601 Web System Development done by Kartha. This application uses technologies like
-                Flask, Python, sqllite, javascript,
-                HTML, Pytest, etc. All of these technolgies come together to help form this application
+                music, art concerned with combining vocal or instrumental sounds for beauty of form or emotional expression, usually according to cultural standards of rhythm, melody, and, in most Western music, harmony. Both the simple folk song and the complex electronic composition belong to the same activity, music
             </p>
         </article>
         {% if current_user.is_authenticated == false %}
@@ -72,7 +70,7 @@
                         {{ render_field(form.email) }}
                         {{ render_field(form.password) }}
                     </dl>
-                    <p><input type=submit value=Login>
+                    <p><input class="btn btn-primary btn-md" type=submit value=Login>
                 </form>
             </aside>
         {% endif %}

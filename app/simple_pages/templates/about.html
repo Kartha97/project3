@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 <article>{% block content %}
     <h1>About</h1>
-    {{ lipsum (n=5, html=True, min=20, max=100) }}
+    <div class="row">
+            <div class="col-7">
+                <p>Welcome to the project 3 of IS601 Web System Development done by Kartha. This application uses
+                technologies like Flask, Python, sqlite, javascript, HTML, Pytest, docker, CI/CD etc. All of these
+                technolgies come together to help form this application</p>
+            <br>
+            <p>This application has login, register, music upload functionality. This takes a csv file and upload the
+                data and store in db and it displays in the dashboard.</p>
+            </div>
+            <div class="col-5">
+                <img src="{{ url_for('static', filename='images/copyright.png') }}" class="rounded" alt="..." style="width:400px; height:100px">
+            </div>
+    </div>
 {% endblock %}
 </article>
