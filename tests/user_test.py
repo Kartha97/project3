@@ -24,7 +24,7 @@ def test_adding_user(application):
         #asserting that the user retrieved is correct
         assert user.email == 'abc@gmail.com'
         #this is how you get a related record ready for insert
-        user.songs= [Song("test","smap"),Song("test2","te")]
+        user.songs= [Song("test","smap","gen1",1998),Song("test2","te","gen2",1998)]
         #commit is what saves the songs
         db.session.commit()
         assert db.session.query(Song).count() == 2
@@ -66,7 +66,7 @@ def test_adding_user(application, client):
         #asserting that the user retrieved is correct
         assert user.email == 'test1@gmail.com'
         #this is how you get a related record ready for insert
-        user.songs= [Song("test","smap"),Song("test2","te")]
+        user.songs= [Song("test","smap","gen1",1998),Song("test2","te","gen2",1998)]
         #commit is what saves the songs
         db.session.commit()
         assert db.session.query(Song).count() == 2
